@@ -88,7 +88,7 @@ function _nonIterableRest() {
   methods: {
     Calc: function Calc() {
       var widthRatio = +this.ratio.split(":")[0];
-      var heightRatio = +this.ratio.split(":")[0];
+      var heightRatio = +this.ratio.split(":")[1];
       this.count = this.iframes.length;
       var height = this.$refs.iframes_grid.clientHeight - 41;
       this.wInnerHeight = height;
@@ -268,7 +268,7 @@ var __vue_render__ = function __vue_render__() {
     return "<iframe" + _vm._ssrAttr("stream", stream) + _vm._ssrAttr("iframeheight", _vm.iframeheight) + _vm._ssrAttr("iframewidth", _vm.iframewidth) + _vm._ssrAttr("src", stream) + " frameborder=\"0\"" + _vm._ssrStyle(null, {
       width: _vm.iframewidth + 'px',
       height: _vm.iframeheight + 'px'
-    }, null) + " data-v-67b14ee7></iframe>";
+    }, null) + " data-v-855353b0></iframe>";
   }))]);
 };
 
@@ -277,8 +277,8 @@ var __vue_staticRenderFns__ = [];
 
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-67b14ee7_0", {
-    source: ".iframes_grid[data-v-67b14ee7]{width:100%;height:100%;text-align:center;float:left;margin:0;padding:0;width:100%}",
+  inject("data-v-855353b0_0", {
+    source: ".iframes_grid[data-v-855353b0]{width:100%;height:100%;text-align:center;float:left;margin:0;padding:0;width:100%}",
     map: undefined,
     media: undefined
   });
@@ -286,10 +286,10 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__ = "data-v-67b14ee7";
+var __vue_scope_id__ = "data-v-855353b0";
 /* module identifier */
 
-var __vue_module_identifier__ = "data-v-67b14ee7";
+var __vue_module_identifier__ = "data-v-855353b0";
 /* functional template */
 
 var __vue_is_functional_template__ = false;

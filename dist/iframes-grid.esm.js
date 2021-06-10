@@ -35,7 +35,7 @@ var script = {
   methods: {
     Calc() {
       var widthRatio = +this.ratio.split(":")[0];
-      var heightRatio = +this.ratio.split(":")[0];
+      var heightRatio = +this.ratio.split(":")[1];
       this.count = this.iframes.length;
       var height = this.$refs.iframes_grid.clientHeight - 41;
       this.wInnerHeight = height;
@@ -255,8 +255,8 @@ var __vue_staticRenderFns__ = [];
 
 const __vue_inject_styles__ = function (inject) {
   if (!inject) return;
-  inject("data-v-67b14ee7_0", {
-    source: ".iframes_grid[data-v-67b14ee7]{width:100%;height:100%;text-align:center;float:left;margin:0;padding:0;width:100%}",
+  inject("data-v-855353b0_0", {
+    source: ".iframes_grid[data-v-855353b0]{width:100%;height:100%;text-align:center;float:left;margin:0;padding:0;width:100%}",
     map: undefined,
     media: undefined
   });
@@ -264,7 +264,7 @@ const __vue_inject_styles__ = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__ = "data-v-67b14ee7";
+const __vue_scope_id__ = "data-v-855353b0";
 /* module identifier */
 
 const __vue_module_identifier__ = undefined;

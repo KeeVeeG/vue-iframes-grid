@@ -31,7 +31,7 @@ export default{
   methods: {
     Calc(){
       var widthRatio = +this.ratio.split(":")[0]
-      var heightRatio = +this.ratio.split(":")[0]
+      var heightRatio = +this.ratio.split(":")[1]
       this.count = this.iframes.length
       var height = (this.$refs.iframes_grid.clientHeight - 41);
       this.wInnerHeight = height;
