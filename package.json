@@ -1,6 +1,6 @@
 {
   "name": "vue-iframes-grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Auto optimize and resize iframes to grid",
   "license": "MIT",
   "keywords": [
@@ -11,7 +11,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/KeeVeeG/vue-iframes-grid.git"
+    "url": "git://github.com/KeeVeeG/vue-iframes-grid.git",
+    "directory": "packages/vue-iframes-grid"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "main": "dist/iframes-grid.ssr.js",
   "browser": "dist/iframes-grid.esm.js",

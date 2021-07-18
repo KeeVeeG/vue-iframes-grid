@@ -14,14 +14,13 @@ export default{
       type: String,
       default: "16:9",
       validator(val){
-        var arr = val.split(":")
+        let arr = val.split(":")
         return arr.length == 2 && arr.every(e=>+e>0)
       }
     }
   },
   data() {
     return {
-      count: -1,
       iframeheight: 0,
       iframewidth: 0,
       boardpadding: 0,
@@ -30,19 +29,19 @@ export default{
   },
   methods: {
     Calc(){
-      var widthRatio = +this.ratio.split(":")[0]
-      var heightRatio = +this.ratio.split(":")[1]
-      this.count = this.iframes.length
-      var height = (this.$refs.iframes_grid.clientHeight - 41);
+      let widthRatio = +this.ratio.split(":")[0]
+      let heightRatio = +this.ratio.split(":")[1]
+      let count = this.iframes.length
+      let height = (this.$refs.iframes_grid.clientHeight - 41);
       this.wInnerHeight = height;
-      var width = this.$refs.iframes_grid.clientWidth;
-      var best_height = 0;
-      var best_width = 0;
-      var wrapper_padding = 0;
-      for (var per_row = 1; per_row <= this.count; per_row++) {
-        var num_rows = Math.ceil(this.count / per_row);
-        var max_width = ~~(width / per_row) - 11;
-        var max_height = ~~(height / num_rows) - 11;
+      let width = this.$refs.iframes_grid.clientWidth;
+      let best_height = 0;
+      let best_width = 0;
+      let wrapper_padding = 0;
+      for (let per_row = 1; per_row <= count; per_row++) {
+        let num_rows = Math.ceil(count / per_row);
+        let max_width = ~~(width / per_row) - 11;
+        let max_height = ~~(height / num_rows) - 11;
         if (max_width * heightRatio/widthRatio < max_height) {
           max_height = max_width * heightRatio/widthRatio;
         } else {
@@ -56,7 +55,7 @@ export default{
       }
       this.iframeheight = ~~(best_height);
       this.iframewidth = ~~(best_width);
-      if(this.$refs.iframes_grid.clientWidth > 910 && this.count > 1)
+      if(this.$refs.iframes_grid.clientWidth > 910 && count > 1)
         this.boardpadding = ~~wrapper_padding;
       else
         this.boardpadding = 0;
